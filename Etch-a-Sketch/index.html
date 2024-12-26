@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link href = "https://t4.ftcdn.net/jpg/01/11/86/95/360_F_111869553_04OBDskYYU5r0b9PW3cfKfD3fkxlfAzW.jpg" rel = "icon" type = "icon/jpg">
+    <link href = "styles.css" rel = "stylesheet">
+    <script src = "script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class ="main-content">
+        <header>
+            <h1>Etch-a-Sketch</h1>
+        </header>
+        <div class = "main">
+            <div class="sidebar">
+                <div class="buttons">
+                    <div class="pen">
+                        <input type = "color" id = "colorInput" value = "#000000">
+                        <laber for = "color-input">Pen</laber>
+                    </div>
+                    <div class="background">
+                        <input type = "color" id = "bgInput" value = "#ffffff">
+                        <label for = "bg-color">Background</label>
+                    </div>
+                    <button id = "randomize">Randomize Color</button>
+                    <button id="eraser">Eraser</button>
+                    <button id="reset">Reset</button>
+                    <div class="grid">
+                        <input type = "range" id = "grid-size" min = "5" max = "64" value = "16">
+                        <label for = "grid-size"><b>Grid Size: </b><span id = "grid-size-label">16 X 16</span></label>
+                    </div>
+                </div>
+            </div>
+            <div class = "container">
+                <div class = "draw-board"></div>
+            </div>
+        </div>
+        <footer>
+            <p>Samuel Dereje &copy; Addis Ababa, Ethiopia</p>
+            <div class="social-icons">
+                <a href="https://github.com/samueldereje96" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
