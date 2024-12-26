@@ -1,0 +1,97 @@
+body {
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: rgb(12, 12, 49);
+    color: rgb(241, 210, 33);
+}
+.main {
+    display: flex;
+    flex: 1;
+}
+.sidebar {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background: #f0f0f0;
+    gap: 10px;
+}
+input[type = "color"] {
+    width: 50px;
+    height: 50px;
+    border: none;
+    margin: 0, 10px;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.container {
+    padding: 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+.draw-board {
+    display: flex;
+    flex-wrap: wrap;
+    height: 640px;
+    width: 640px;
+    border: 1px solid black;
+}
+.grid-square {
+    border: 0.5px solid lightgrey;
+    box-sizing: border-box;
+    background-color: white;
+}
+.grid {
+    display: flex;
+    flex-direction: column;
+}
+.pen , .background {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+button {
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+#randomize {
+    background: linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red);
+    color: white;
+}
+#eraser {
+    background: linear-gradient(-45deg, black, white);
+}
+#reset {
+    background-color: white;;
+}
+social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #ecf0f1;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #3498db;
+}
